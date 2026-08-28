@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Button Click Event | JavaScript Lab</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="d">
+	<div id="site-nav"></div>
+	<main class="page-shell">
+		<a class="back-link" href="index.html">&larr; All experiments</a>
+		<section class="lesson-header">
+			<p class="eyebrow">Experiment D</p>
+			<h1>Button click events</h1>
+			<p>Attach separate click handlers and update one output area with the selected topic.</p>
+		</section>
+		<section class="lesson-panel">
+			<h2>Click a button</h2>
+			<div class="button-row">
+				<button id="btn1" type="button">B.Tech III Year CSE</button>
+				<button id="btn2" type="button">Computer Science</button>
+				<button id="btn3" type="button">Full Stack Development</button>
+			</div>
+			<p id="output" class="output" aria-live="polite">Your selection will appear here.</p>
+		</section>
+	</main>
+	<script src="nav.js"></script>
+	<script>
+		const output = document.getElementById("output");
+		[["btn1", "B.Tech III Year CSE"], ["btn2", "Computer Science and Engineering"], ["btn3", "Full Stack Development - II"]]
+			.forEach(([buttonId, message]) => {
+				document.getElementById(buttonId).addEventListener("click", () => {
+					output.textContent = message;
+				});
+			});
+	</script>
+</body>
+</html>

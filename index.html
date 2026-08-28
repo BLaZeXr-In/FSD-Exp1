@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>JavaScript Lab Experiments</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body { font-family: Arial, sans-serif; background: #f4f6f8; color: #222; }
+
+        nav { background: #222; padding: 16px 20px; text-align: center; }
+        nav a { color: #fff; margin: 0 10px; text-decoration: none; }
+        nav a:hover, nav a:focus { text-decoration: underline; }
+
+        header {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 25px 10px;
+        }
+
+        header h1 {
+            margin-bottom: 8px;
+        }
+
+        header p {
+            color: #ccc;
+        }
+
+        .container {
+            width: 85%;
+            max-width: 900px;
+            margin: 40px auto;
+        }
+
+        .container h2 {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .experiments {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 22px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #666;
+            line-height: 1.5;
+            margin-bottom: 18px;
+        }
+
+        .card a {
+            display: inline-block;
+            text-decoration: none;
+            background: #222;
+            color: white;
+            padding: 9px 16px;
+            border-radius: 5px;
+        }
+
+        .card a:hover {
+            background: #444;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #777;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav aria-label="Main navigation">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="a.html">A: Linking</a>
+        <a href="b.html">B: Selectors</a>
+        <a href="c.html">C: Events</a>
+        <a href="d.html">D: Buttons</a>
+        <a href="e.html">E: Functions</a>
+    </nav>
+
+    <div class="container">
+
+        <h2>Experiments</h2>
+
+        <div class="experiments">
+
+            <div class="card">
+                <h3>Experiment A</h3>
+                <p>Linking JavaScript file with an HTML page.</p>
+                <a href="a.html">Open Experiment</a>
+            </div>
+
+            <div class="card">
+                <h3>Experiment B</h3>
+                <p>Selecting HTML elements using JavaScript DOM selectors.</p>
+                <a href="b.html">Open Experiment</a>
+            </div>
+
+            <div class="card">
+                <h3>Experiment C</h3>
+                <p>Implementing event listeners in JavaScript.</p>
+                <a href="c.html">Open Experiment</a>
+            </div>
+
+            <div class="card">
+                <h3>Experiment D</h3>
+                <p>Handling click events for HTML button elements.</p>
+                <a href="d.html">Open Experiment</a>
+            </div>
+
+            <div class="card">
+                <h3>Experiment E</h3>
+                <p>Demonstrating different types of JavaScript functions.</p>
+                <a href="e.html">Open Experiment</a>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
