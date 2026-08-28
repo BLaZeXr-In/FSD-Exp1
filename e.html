@@ -1,30 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>JavaScript Functions | JavaScript Lab</title>
-<style>body{font-family:Arial,sans-serif;margin:0;background:#f4f6f8;color:#222}nav{background:#222;padding:16px;text-align:center}nav a{color:#fff;margin:0 10px;text-decoration:none}main{max-width:850px;margin:48px auto;padding:0 20px}section{background:#fff;padding:28px;border:1px solid #ddd;border-radius:8px}button{padding:10px 16px;margin:8px 8px 8px 0}</style>
+    <title>JavaScript Functions</title>
 </head>
 <body>
-<nav aria-label="Main navigation"><a href="index.html">Home</a><a href="a.html">A: Linking</a><a href="b.html">B: Selectors</a><a href="c.html">C: Events</a><a href="d.html">D: Buttons</a><a href="e.html" aria-current="page">E: Functions</a></nav>
-<main><a href="index.html">&larr; All experiments</a><section><h1>Three Types of Functions</h1><p>Click a button to invoke a function type.</p><button id="declaration" type="button">Function Declaration</button><button id="definition" type="button">Function Expression</button><button id="arrow" type="button">Arrow Function</button><p id="output" aria-live="polite"></p></section></main>
+
+<h1>Three Types of Functions</h1>
+
+<button id="declaration">Function Declaration</button>
+<button id="definition">Function Expression</button>
+<button id="arrow">Arrow Function</button>
+
+<p id="output"></p>
+
 <script>
 const output = document.getElementById("output");
-
-document.getElementById("declaration").addEventListener("click", greetDeclaration);
-document.getElementById("definition").addEventListener("click", greetDefinition);
-document.getElementById("arrow").addEventListener("click", greetArrow);
 
 function greetDeclaration() {
     output.innerText = "Hello from Function Declaration!";
 }
 
 const greetDefinition = function() {
-    output.innerText = "Hello from Function Definition (Expression)!";
+    output.innerText = "Hello from Function Expression!";
 };
 
 const greetArrow = () => {
     output.innerText = "Hello from Arrow Function!";
 };
+
+document.getElementById("declaration").addEventListener("click", greetDeclaration);
+document.getElementById("definition").addEventListener("click", greetDefinition);
+document.getElementById("arrow").addEventListener("click", greetArrow);
 </script>
+
 </body>
 </html>
