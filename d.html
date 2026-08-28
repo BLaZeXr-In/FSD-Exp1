@@ -1,11 +1,35 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Button Click Event</title>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Button Click Events | JavaScript Lab</title>
+
+<style>
+body{font-family:Arial,sans-serif;margin:0;background:#f4f6f8;color:#222}
+nav{background:#222;padding:16px;text-align:center}
+nav a{color:#fff;margin:0 10px;text-decoration:none}
+main{max-width:850px;margin:48px auto;padding:0 20px}
+section{background:#fff;padding:28px;border:1px solid #ddd;border-radius:8px}
+button{padding:10px 16px;margin:8px 0}
+#hoverBox{width:200px;height:100px;background-color:lightblue;margin-top:20px;padding:12px}
+</style>
 </head>
+
 <body>
+
+<nav aria-label="Main navigation">
+<a href="index.html">Home</a>
+<a href="a.html">A: Linking</a>
+<a href="b.html">B: Selectors</a>
+<a href="c.html">C: Events</a>
+<a href="d.html" aria-current="page">D: Buttons</a>
+<a href="e.html">E: Functions</a>
+</nav>
+
+<main>
+<a href="index.html">&larr; All experiments</a>
+
+<section>
 
 <h1>Button Click Events</h1>
 
@@ -15,21 +39,27 @@
 
 <p id="output">Your selection will appear here.</p>
 
+</section>
+</main>
+
 <script>
+
 const output = document.getElementById("output");
 
-document.getElementById("btn1").addEventListener("click", () => {
-    output.textContent = "B.Tech III Year CSE";
+document.getElementById("btn1").addEventListener("click", function () {
+    output.innerText = "B.Tech III Year CSE";
 });
 
-document.getElementById("btn2").addEventListener("click", () => {
-    output.textContent = "Computer Science and Engineering";
+document.getElementById("btn2").addEventListener("click", function () {
+    output.innerText = "Computer Science and Engineering";
 });
 
-document.getElementById("btn3").addEventListener("click", () => {
-    output.textContent = "Full Stack Development - II";
+document.getElementById("btn3").addEventListener("click", function () {
+    output.innerText = "Full Stack Development - II";
 });
+
 </script>
 
 </body>
 </html>
+```
